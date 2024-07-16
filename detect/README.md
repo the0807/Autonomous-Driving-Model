@@ -2,6 +2,8 @@
 
 # 2D Object Detection
 
+### YOLOv8 based object detection
+
 </div>
 
 # ✏️ Prepare
