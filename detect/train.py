@@ -8,7 +8,7 @@ results = model.train(
    data='dataset/Preprocessed_2DBB/data.yaml',
    imgsz=640,
    epochs=300,
-   batch=10,
-   device=0,
+   batch=24,
+   device=[0,1],
    plots=True,
 )
