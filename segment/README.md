@@ -54,3 +54,12 @@ dataset
 # 📚 Usage
 ### 1. Preprocessing Data
 run code `data_preprocessing.ipynb`
+
+### 2. Train data
+
+```shell
+python train.py
+```
+
+### 3. Inference
+run code `inference.ipynb`
