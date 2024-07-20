@@ -55,8 +55,9 @@ run code `data_preprocessing.ipynb`
 python train.py
 ```
 
-### 3. Loss graph
+### 3. Draw graph
 ```shell
+# Saved in path 'runs/detect/train/result.png'
 python result_plot.py
 ```
 

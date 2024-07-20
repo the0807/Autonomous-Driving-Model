@@ -23,7 +23,7 @@ cfg.merge_from_file(cfg.OUTPUT_DIR+'/config.yaml')
 
 cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
 #cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_0044999.pth")
-cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.6
+cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
 predictor = DefaultPredictor(cfg)
 
 evaluator = COCOEvaluator("2DSS_test", output_dir="./output")
