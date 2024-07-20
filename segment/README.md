@@ -66,16 +66,16 @@ python config.py
 python train.py
 ```
 
-### 3. Draw graph
+### 4. Draw graph
 ```shell
 # Saved in path 'output/result_plot.png'
 python loss_graph.py
 ```
 
-### 4. Inference
+### 5. Inference
 run code `inference.ipynb`
 
-### 5. Evaluation
+### 6. Evaluation
 ```shell
 python validation.py
 ```
