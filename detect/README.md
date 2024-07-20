@@ -55,10 +55,15 @@ run code `data_preprocessing.ipynb`
 python train.py
 ```
 
-### 3. Inference
+### 3. Loss graph
+```shell
+python result_plot.py
+```
+
+### 4. Inference
 run code `inference.ipynb`
 
-### 4. Evaluation
+### 5. Evaluation
 ```shell
 python validation.py
 ```
