@@ -46,12 +46,21 @@ dataset
         └── labels
 ```
 
-# 📚 Usage
+# 📚 Trian
 ### 1. Preprocessing Data
 run code `data_preprocessing.ipynb`
 
-### 2. Train data
+### 2. Train
 
 ```shell
 python train.py
+```
+
+# 💭 Inference
+### 1. Image Inference 
+run code `inference.ipynb`
+
+# 🧐 Evaluation
+```shell
+python validation.py
 ```
