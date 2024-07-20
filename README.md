@@ -13,12 +13,8 @@
 - PyTorch 2.1
 
 # 📚 Usage
-### ⭐ Object Detection Model
+### ⭐ [`Object Detection Model`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/detect)
 
-    🚀 [`2D Object Detection`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/detect)
-
-### ⭐ Semantic Segmentation Model
-
-    🚀 [`2D Semantic Segmentation`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment)
+### ⭐ [`Semantic Segmentation Model`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment)
 
 # ⚡️ Result
