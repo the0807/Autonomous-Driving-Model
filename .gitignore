@@ -1,3 +1,4 @@
 */dataset/
 */yolo*.pt
 detect/runs/detect/train/weights
+segment/output/model*

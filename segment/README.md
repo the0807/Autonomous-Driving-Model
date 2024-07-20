@@ -55,11 +55,21 @@ dataset
 ### 1. Preprocessing Data
 run code `data_preprocessing.ipynb`
 
-### 2. Train data
+### 2. Make config file to train
+```shell
+# change options here(batch_size, learning rate)
+python config.py
+```
 
+### 3. Train
 ```shell
 python train.py
 ```
 
-### 3. Inference
+### 4. Inference
 run code `inference.ipynb`
+
+### 5. Evaluation
+```shell
+python validation.py
+```

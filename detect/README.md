@@ -2,7 +2,7 @@
 
 # 2D Object Detection
 
-### YOLOv8 based object detection
+### YOLOv8 based Object Detection
 
 </div>
 
@@ -46,21 +46,19 @@ dataset
         └── labels
 ```
 
-# 📚 Trian
+# 📚 Usage
 ### 1. Preprocessing Data
 run code `data_preprocessing.ipynb`
 
 ### 2. Train
-
 ```shell
 python train.py
 ```
 
-# 💭 Inference
-### 1. Image Inference 
+### 3. Inference
 run code `inference.ipynb`
 
-# 🧐 Evaluation
+### 4. Evaluation
 ```shell
 python validation.py
 ```
