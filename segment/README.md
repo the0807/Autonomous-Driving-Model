@@ -68,8 +68,8 @@ python train.py
 
 ### 4. Draw graph
 ```shell
-# Saved in path 'output/result_plot.png'
-python loss_graph.py
+# Saved in path 'output/metrics.png'
+python metrics_plot.py
 ```
 
 ### 5. Inference
