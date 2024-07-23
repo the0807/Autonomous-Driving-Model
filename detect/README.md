@@ -31,20 +31,20 @@ python gpu_test.py
 ``` shell
 dataset
 │
-│   # 40GB
+│   # 40.98GB
 └── 2DBB
     │
-    │   # 32GB
+    │   # 32.78GB
     ├── training
     │   ├── images
     │   └── labels
     │
-    │   # 4GB
+    │   # 4.1GB
     ├── validation
     │   ├── images
     │   └── labels
     │
-    │   # 4GB
+    │   # 4.1GB
     └── test
         ├── images
         └── labels
