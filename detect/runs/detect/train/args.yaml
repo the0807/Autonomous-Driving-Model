@@ -2,7 +2,7 @@ task: detect
 mode: train
 model: yolov8x.pt
 data: dataset/Preprocessed_2DBB/data.yaml
-epochs: 300
+epochs: 250
 time: null
 patience: 100
 batch: 24

@@ -92,3 +92,5 @@ run code `inference.ipynb`
 ```shell
 python validation.py
 ```
+
+# ⚡️ Result

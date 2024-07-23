@@ -21,3 +21,4 @@
 ### ⭐ [`Semantic Segmentation Model`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment)
 
 # ⚡️ Result
+<img width="1564" alt="predict" src="https://github.com/user-attachments/assets/4a8d1f3f-4206-49cb-85c9-d22e3458f603">
