@@ -1,3 +1,4 @@
 torch
 torchvision
 -e detectron2
+shapely
