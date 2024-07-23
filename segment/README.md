@@ -6,6 +6,15 @@
 
 </div>
 
+# 🖥️ Test Environment
+<div align="center">
+
+|OS|GPU|CPU|RAM|CUDA|PyTorch|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|Ubuntu 20.04|Nvidia Quadro <br>RTX 5000|Intel(R) Xeon(R)<br> W-2245 CPU @ 3.90GHz|128GB|12.1|2.1|
+
+</div>
+
 # ✏️ Prepare
 ### 1. Git clone Detectron2
 ```shell
@@ -36,16 +45,20 @@ python gpu_test.py
 ``` shell
 dataset
 │
+│   # 7.23GB
 └── 2DSS
     │
+    │   # 5.77GB
     ├── training
     │   ├── images
     │   └── labels
     │
+    │   # 0.73GB
     ├── validation
     │   ├── images
     │   └── labels
     │
+    │   # 0.73GB
     └── test
         ├── images
         └── labels
