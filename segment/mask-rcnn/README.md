@@ -94,3 +94,6 @@ python validation.py
 ```
 
 # ⚡️ Result
+![metrics](https://github.com/user-attachments/assets/67dc260b-4a22-4620-a7f3-015b3b5e0a4f)
+
+<img width="1861" alt="스크린샷 2024-07-28 오후 3 57 04" src="https://github.com/user-attachments/assets/e06762ca-2902-42b6-aa24-8fd775908cd1">
