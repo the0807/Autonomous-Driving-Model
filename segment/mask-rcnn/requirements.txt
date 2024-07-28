@@ -1,0 +1,5 @@
+torch
+torchvision
+opencv-python
+-e detectron2
+shapely
