@@ -8,7 +8,8 @@ from detectron2.data import build_detection_train_loader, transforms as T
 from detectron2.data import detection_utils as utils
 from detectron2.data.datasets import register_coco_instances
 
-# Paths to the dataset
+os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+
 train_path = 'dataset/Preprocessed_2DSS/training/coco'
 val_path = 'dataset/Preprocessed_2DSS/validation/coco'
 test_path = 'dataset/Preprocessed_2DSS/test/coco'
@@ -17,7 +18,6 @@ train_json_path = os.path.join(train_path, 'training_coco.json')
 val_json_path = os.path.join(val_path, 'validation_coco.json')
 test_json_path = os.path.join(test_path, 'test_coco.json')
 
-# Register datasets
 register_coco_instances("2DSS_train", {}, train_json_path, train_path)
 register_coco_instances("2DSS_val", {}, val_json_path, val_path)
 register_coco_instances("2DSS_test", {}, test_json_path, test_path)
