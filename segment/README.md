@@ -76,7 +76,7 @@ python config.py
 
 ### 3. Train
 ```shell
-python train.py
+python train.py --num-gpus 1
 ```
 
 ### 4. Draw graph

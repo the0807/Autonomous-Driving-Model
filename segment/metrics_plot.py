@@ -16,28 +16,28 @@ plt.figure(figsize=(18, 10))
 
 # Total Loss plot
 plt.subplot(2, 2, 1)
-plt.plot(iterations, total_losses, marker='o', linestyle='-', color='b')
+plt.plot(iterations, total_losses, marker='.', linestyle='-', color='m')
 plt.xlabel('Iteration')
 plt.ylabel('Total Loss')
 plt.title('Iterations/Total Loss')
 
 # Accuracy plot
 plt.subplot(2, 2, 2)
-plt.plot(iterations, accuracies, marker='o', linestyle='-', color='g')
+plt.plot(iterations, accuracies, marker='.', linestyle='-', color='g')
 plt.xlabel('Iteration')
 plt.ylabel('Accuracy')
 plt.title('Iterations/Accuracy')
 
 # False Negative plot
 plt.subplot(2, 2, 3)
-plt.plot(iterations, false_negatives, marker='o', linestyle='-', color='r')
+plt.plot(iterations, false_negatives, marker='.', linestyle='-', color='r')
 plt.xlabel('Iteration')
 plt.ylabel('False Negative')
 plt.title('Iterations/False Negative')
 
 # False Positive plot
 plt.subplot(2, 2, 4)
-plt.plot(iterations, false_positives, marker='o', linestyle='-', color='m')
+plt.plot(iterations, false_positives, marker='.', linestyle='-', color='b')
 plt.xlabel('Iteration')
 plt.ylabel('False Positive')
 plt.title('Iterations/False Positive')

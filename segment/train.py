@@ -1,12 +1,14 @@
 import os
 import copy
 import torch
-from detectron2.engine import DefaultTrainer
+import detectron2.utils.comm as comm
+from detectron2.engine import DefaultTrainer, default_argument_parser, default_setup, launch
 from detectron2.config import get_cfg
 from detectron2.data import build_detection_train_loader, transforms as T
 from detectron2.data import detection_utils as utils
 from detectron2.data.datasets import register_coco_instances
 
+# Paths to the dataset
 train_path = 'dataset/Preprocessed_2DSS/training/coco'
 val_path = 'dataset/Preprocessed_2DSS/validation/coco'
 test_path = 'dataset/Preprocessed_2DSS/test/coco'
@@ -15,6 +17,7 @@ train_json_path = os.path.join(train_path, 'training_coco.json')
 val_json_path = os.path.join(val_path, 'validation_coco.json')
 test_json_path = os.path.join(test_path, 'test_coco.json')
 
+# Register datasets
 register_coco_instances("2DSS_train", {}, train_json_path, train_path)
 register_coco_instances("2DSS_val", {}, val_json_path, val_path)
 register_coco_instances("2DSS_test", {}, test_json_path, test_path)
@@ -51,10 +54,27 @@ class CustomTrainer(DefaultTrainer):
     def build_train_loader(cls, cfg):
         return build_detection_train_loader(cfg, mapper=custom_mapper)
 
-cfg = get_cfg()
-cfg.merge_from_file(cfg.OUTPUT_DIR+'/config.yaml')
+def setup(args):
+    cfg = get_cfg()
+    cfg.merge_from_file('output/config.yaml')
+    cfg.merge_from_list(args.opts)
+    cfg.freeze()
+    default_setup(cfg, args)
+    return cfg
 
-os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
-trainer = CustomTrainer(cfg)
-trainer.resume_or_load(resume=False)
-trainer.train()
+def main(args):
+    cfg = setup(args)
+    trainer = CustomTrainer(cfg)
+    trainer.resume_or_load(resume=args.resume)
+    return trainer.train()
+
+if __name__ == "__main__":
+    args = default_argument_parser().parse_args()
+    launch(
+        main,
+        args.num_gpus,
+        num_machines=args.num_machines,
+        machine_rank=args.machine_rank,
+        dist_url=args.dist_url,
+        args=(args,),
+    )

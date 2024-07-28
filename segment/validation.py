@@ -5,6 +5,9 @@ from detectron2.config import get_cfg
 from detectron2.data.datasets import register_coco_instances
 from detectron2.evaluation import COCOEvaluator, inference_on_dataset
 from detectron2.data import build_detection_test_loader
+from detectron2.utils.logger import setup_logger
+
+setup_logger()
 
 train_path = 'dataset/Preprocessed_2DSS/training/coco'
 val_path = 'dataset/Preprocessed_2DSS/validation/coco'
@@ -22,11 +25,10 @@ cfg = get_cfg()
 cfg.merge_from_file(cfg.OUTPUT_DIR+'/config.yaml')
 
 cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
-#cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_0044999.pth")
 cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
 predictor = DefaultPredictor(cfg)
 
-evaluator = COCOEvaluator("2DSS_test", output_dir="./output")
+evaluator = COCOEvaluator("2DSS_test", distributed=True, output_dir="./output")
 val_loader = build_detection_test_loader(cfg, "2DSS_test")
 
 print(inference_on_dataset(predictor.model, val_loader, evaluator))
