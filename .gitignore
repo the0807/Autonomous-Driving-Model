@@ -4,6 +4,3 @@ detect/runs/detect/train/weights
 segment/output/model*
 segment/output/events*
 segment/model*
-segment/mask-rcnn/output/model*
-segment/mask-rcnn/output/events*
-segment/mask-rcnn/model*

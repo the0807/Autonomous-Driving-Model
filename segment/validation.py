@@ -24,7 +24,8 @@ register_coco_instances("2DSS_test", {}, test_json_path, test_path)
 cfg = get_cfg()
 cfg.merge_from_file(cfg.OUTPUT_DIR+'/config.yaml')
 
-cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
+#cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
+cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_0029999.pth")
 cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
 predictor = DefaultPredictor(cfg)
 
