@@ -1,7 +1,6 @@
 import os
 import copy
 import torch
-import detectron2.utils.comm as comm
 from detectron2.engine import DefaultTrainer, default_argument_parser, default_setup, launch
 from detectron2.config import get_cfg
 from detectron2.data import build_detection_train_loader, transforms as T
@@ -28,13 +27,14 @@ def custom_mapper(dataset_dict):
     annos = dataset_dict.get("annotations", [])
     
     transform_list = [
-        T.ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style='choice'),
-        T.RandomFlip(prob=0.5, horizontal=True, vertical=False),
-        T.RandomRotation(angle=[-10, 10]),
-        T.RandomBrightness(0.8, 1.2),
-        T.RandomContrast(0.6, 1.4),
-        T.RandomSaturation(0.8, 1.2),
-        T.RandomCrop("relative_range", (0.8, 0.8))
+        T.ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style="choice"),
+        T.RandomApply(T.RandomCrop("relative", (0.8, 0.8)), prob=0.3),
+        T.RandomApply(T.RandomRotation(angle=[-10, 10]), prob=0.5),
+        T.RandomApply(T.RandomBrightness(0.7, 1.3), prob=0.5),
+        T.RandomApply(T.RandomContrast(0.8, 1.2), prob=0.5),
+        T.RandomApply(T.RandomSaturation(0.8, 1.2), prob=0.5),
+        T.RandomApply(T.RandomLighting(0.1), prob=0.5),
+        T.RandomFlip(prob=0.5, horizontal=True, vertical=False)
     ]
     
     image, transforms = T.apply_transform_gens(transform_list, image)
