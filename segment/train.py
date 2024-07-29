@@ -8,7 +8,7 @@ from detectron2.data import build_detection_train_loader, transforms as T
 from detectron2.data import detection_utils as utils
 from detectron2.data.datasets import register_coco_instances
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+#os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
 train_path = 'dataset/Preprocessed_2DSS/training/coco'
 val_path = 'dataset/Preprocessed_2DSS/validation/coco'
