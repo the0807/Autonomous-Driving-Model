@@ -7,5 +7,3 @@
 </div>
 
 ### ⭐ [`MMSegmentation(PSPNet)`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment/mmseg)
-
-### ⭐ [`Detectron2(Mask R-CNN)`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment/detectron2)
