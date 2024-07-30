@@ -650,3 +650,5 @@ Category ids in annotations are not in [1, #categories]! We'll apply a mapping f
 [34mroi_heads.box_predictor.cls_score.{bias, weight}[0m
 [34mroi_heads.mask_head.predictor.{bias, weight}[0m
 [07/30 00:29:30] detectron2.engine.train_loop INFO: Starting training from iteration 0
+[07/30 16:56:14] detectron2.engine.hooks INFO: Overall training speed: 106585 iterations in 16:26:34 (0.5554 s / it)
+[07/30 16:56:14] detectron2.engine.hooks INFO: Total training time: 16:26:38 (0:00:04 on hooks)
