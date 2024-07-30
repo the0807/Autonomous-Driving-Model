@@ -1,5 +1,6 @@
 torch
 torchvision
 numpy==1.26.4
+seaborn
 ftfy
 regex

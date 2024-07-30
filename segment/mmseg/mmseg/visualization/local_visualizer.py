@@ -139,6 +139,7 @@ class SegLocalVisualizer(Visualizer):
         for label, color in zip(labels, colors):
             mask[sem_seg[0] == label, :] = color
 
+        '''
         if with_labels:
             font = cv2.FONT_HERSHEY_SIMPLEX
             # (0,1] to change the size of the text relative to the image
@@ -176,6 +177,7 @@ class SegLocalVisualizer(Visualizer):
                 mask = cv2.putText(mask, text, (loc[0], loc[1] + label_height),
                                    font, fontScale, fontColor, thickness,
                                    lineType)
+        '''
         color_seg = (image * (1 - self.alpha) + mask * self.alpha).astype(
             np.uint8)
         self.set_image(color_seg)

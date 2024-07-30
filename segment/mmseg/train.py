@@ -10,10 +10,11 @@ from mmengine.runner import Runner
 
 from mmseg.registry import RUNNERS
 
+os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
-    parser.add_argument('--config', default=True, help='train config file path')
+    parser.add_argument('config', default=True, help='train config file path')
     parser.add_argument('--work-dir', help='the dir to save logs and models')
     parser.add_argument(
         '--resume',

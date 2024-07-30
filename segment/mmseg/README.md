@@ -114,13 +114,20 @@ configs
 
 ### 4. Train
 ```shell
-python train.py --config 'configs/pspnet.py'
+# Single GPU
+python train.py 'configs/pspnet.py'
+
+# Multiple GPU
+bash dist_train.sh 'configs/pspnet.py' 2
 ```
 
 ### 5. Draw graph
 ```shell
-# Saved in path 'output/metrics.png'
-python metrics_plot.py
+# Plot loss metric
+python metrics_plot.py 'path/to/trainlog.json' --out 'path/to/trainlog/loss_plots.png' --keys loss --legend loss
+
+# Plot the mIoU, mAcc, aAcc metrics
+python metrics_plot.py 'path/to/trainlog.json' --out 'path/to/trainlog/train_plots.png' --keys mIoU mAcc aAcc --legend mIoU mAcc aAcc
 ```
 
 ### 6. Inference
@@ -128,7 +135,7 @@ run code `inference.ipynb`
 
 ### 7. Evaluation
 ```shell
-python validation.py
+python validation.py 'configs/pspnet.py' 'path/to/trained_model.pth'
 ```
 
 # ⚡️ Result
