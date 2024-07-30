@@ -16,24 +16,36 @@
 </div>
 
 # ✏️ Prepare
-### 1. Install MMCV using MIM
+### 1. Install python requirements
+
+```shell
+pip install -r requirements.txt
+```
+
+### 2. Install MMCV using MIM
 ```shell
 pip install -U openmim
 mim install mmengine
-mim install "mmcv>=2.0.0"
+mim install "mmcv==2.1.0"
 ```
 
-### 2. Install MMSegmentation
+### 3. Install MMSegmentation
 ```shell
 git clone -b main https://github.com/open-mmlab/mmsegmentation.git
 cd mmsegmentation
 pip install -v -e .
 ```
 
-### 3. Install python requirements
-
+#### Verifying MMSegmentation Installation
 ```shell
-pip install -r requirements.txt
+# Step 1
+cd mmsegmentation
+mim download mmsegmentation --config pspnet_r50-d8_4xb2-40k_cityscapes-512x1024 --dest .
+
+# Step 2
+python demo/image_demo.py demo/demo.png configs/pspnet/pspnet_r50-d8_4xb2-40k_cityscapes-512x1024.py pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth --device cuda:0 --out-file result.jpg
+
+# check result.jpg
 ```
 
 ### 4. Check GPU available
