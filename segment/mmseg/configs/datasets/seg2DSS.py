@@ -1,5 +1,5 @@
 # dataset settings
-dataset_type = '2DSSDataset'
+dataset_type = 'seg2DSSDataset'
 data_root = 'dataset/Preprocessed_2DSS'
 crop_size = (512, 1024)
 train_pipeline = [

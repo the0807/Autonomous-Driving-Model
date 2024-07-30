@@ -89,32 +89,46 @@ dataset
 ### 1. Preprocessing Data
 run code `data_preprocessing.ipynb`
 
-### 2. Make config file to train
+### 2. Register Dataset
+🚀 [`MMSegmentation Docs`](https://mmsegmentation.readthedocs.io/en/latest/advanced_guides/add_datasets.html)
+
+### 3. Modify config file
 ```shell
-# change options here(batch_size, learning rate)
-python config.py
+configs
+│
+│   # dataset setting
+├── datasets/
+│
+│   # model setting
+├── models/
+│
+│   # train schedule setting
+├── schedules/
+│
+│   # runtime setting
+├── default_runtime.py
+│
+│   # main config setting
+└── pspnet_r50-d8_4xb2-40k_2DSS-512x1024.py
 ```
 
-### 3. Train
+### 4. Train
 ```shell
-python train.py --num-gpus 1
+python train.py --config 'configs/pspnet.py'
 ```
 
-### 4. Draw graph
+### 5. Draw graph
 ```shell
 # Saved in path 'output/metrics.png'
 python metrics_plot.py
 ```
 
-### 5. Inference
+### 6. Inference
 run code `inference.ipynb`
 
-### 6. Evaluation
+### 7. Evaluation
 ```shell
 python validation.py
 ```
 
 # ⚡️ Result
-![metrics](https://github.com/user-attachments/assets/67dc260b-4a22-4620-a7f3-015b3b5e0a4f)
-
-<img width="1861" alt="스크린샷 2024-07-28 오후 3 57 04" src="https://github.com/user-attachments/assets/e06762ca-2902-42b6-aa24-8fd775908cd1">
