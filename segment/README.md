@@ -9,7 +9,7 @@
 ### ⭐ [`MMSegmentation(DeepLabV3, PSPNet)`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment/mmseg)
 
 # ⚡️ Result
-### ⭐ DeepLabV3
+### ⭐ DeepLabV3+
 <div align="center">
 
 

@@ -96,20 +96,20 @@ run code `data_preprocessing.ipynb`
 ```shell
 configs
 │
-│   # dataset setting
+│   # dataset setting (e.g. batch size)
 ├── datasets/
 │
-│   # model setting
+│   # model setting (e.g. deeplabv3+, PSPNet)
 ├── models/
 │
-│   # train schedule setting
+│   # train schedule setting (e.g. iteration, val interval)
 ├── schedules/
 │
 │   # runtime setting
 ├── default_runtime.py
 │
 │   # main config setting
-└── deeplabv3plus.py
+└── deeplabv3plus_240k.py
 ```
 
 > [!Important]
@@ -153,7 +153,7 @@ python validation.py 'configs/pspnet.py' 'path/to/trained_model.pth'
 ```
 
 # ⚡️ Result
-### ⭐ DeepLabV3
+### ⭐ DeepLabV3+
 <div align="center">
 
 

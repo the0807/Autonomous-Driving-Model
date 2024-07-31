@@ -24,7 +24,7 @@ data_preprocessor = dict(
 data_root = 'dataset/Preprocessed_2DSS'
 dataset_type = 'seg2DSSDataset'
 default_hooks = dict(
-    checkpoint=dict(by_epoch=False, interval=4000, type='CheckpointHook'),
+    checkpoint=dict(by_epoch=False, interval=24000, type='CheckpointHook'),
     logger=dict(interval=50, log_metric_by_epoch=False, type='LoggerHook'),
     param_scheduler=dict(type='ParamSchedulerHook'),
     sampler_seed=dict(type='DistSamplerSeedHook'),
@@ -139,7 +139,7 @@ param_scheduler = [
     dict(
         begin=0,
         by_epoch=False,
-        end=40000,
+        end=240000,
         eta_min=0.0001,
         power=0.9,
         type='PolyLR'),
@@ -178,9 +178,10 @@ test_pipeline = [
     dict(type='LoadAnnotations'),
     dict(type='PackSegInputs'),
 ]
-train_cfg = dict(max_iters=40000, type='IterBasedTrainLoop', val_interval=4000)
+train_cfg = dict(
+    max_iters=240000, type='IterBasedTrainLoop', val_interval=24000)
 train_dataloader = dict(
-    batch_size=2,
+    batch_size=3,
     dataset=dict(
         data_prefix=dict(
             img_path='images/training', seg_map_path='annotations/training'),
@@ -294,4 +295,4 @@ visualizer = dict(
     vis_backends=[
         dict(type='LocalVisBackend'),
     ])
-work_dir = './work_dirs/deeplabv3plus'
+work_dir = './work_dirs/deeplabv3plus_240k'
