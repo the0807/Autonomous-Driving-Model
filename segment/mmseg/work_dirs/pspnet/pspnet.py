@@ -44,7 +44,7 @@ img_ratios = [
     1.75,
 ]
 launcher = 'none'
-load_from = 'work_dirs/pspnet/iter_8000.pth'
+load_from = 'work_dirs/pspnet/iter_40000.pth'
 log_level = 'INFO'
 log_processor = dict(by_epoch=False)
 model = dict(
@@ -166,10 +166,7 @@ test_dataloader = dict(
 test_evaluator = dict(
     iou_metrics=[
         'mIoU',
-    ],
-    keep_results=True,
-    output_dir='./testtttttttttttt/pred_result.pkl',
-    type='IoUMetric')
+    ], type='IoUMetric')
 test_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(keep_ratio=True, scale=(

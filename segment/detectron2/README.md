@@ -96,10 +96,10 @@ python validation.py
 # ⚡️ Result
 <div align="center">
 
-![metrics](https://github.com/user-attachments/assets/4620d6fd-b3f4-423e-b077-7402dcd222cb)
+<img width="1860" alt="스크린샷 2024-07-30 오후 4 56 28" src="https://github.com/user-attachments/assets/4fe35564-d075-4443-9b98-9968d53bb977">
 
 <img width="800" alt="스크린샷 2024-07-30 오후 5 11 11" src="https://github.com/user-attachments/assets/3a09c237-41fc-4ac5-8b05-f5cf6e081e2b">
 
-<img width="1860" alt="스크린샷 2024-07-30 오후 4 56 28" src="https://github.com/user-attachments/assets/4fe35564-d075-4443-9b98-9968d53bb977">
+![metrics](https://github.com/user-attachments/assets/4620d6fd-b3f4-423e-b077-7402dcd222cb)
 
 </div>
