@@ -90,7 +90,7 @@ dataset
 run code `data_preprocessing.ipynb`
 
 ### 2. Register Dataset
-🚀 [`MMSegmentation Docs`](https://mmsegmentation.readthedocs.io/en/latest/advanced_guides/add_datasets.html)
+🚀 [`MMSegmentation Docs - add datasets`](https://mmsegmentation.readthedocs.io/en/latest/advanced_guides/add_datasets.html)
 
 ### 3. Modify config file
 ```shell
@@ -109,16 +109,30 @@ configs
 ├── default_runtime.py
 │
 │   # main config setting
-└── pspnet_r50-d8_4xb2-40k_2DSS-512x1024.py
+└── deeplabv3plus.py
 ```
+
+> [!Important]
+> - officially supported Models
+> 
+>     🚀 [`Model Zoo`](https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/model_zoo.md)
+>
+>     🚀 [`Model configs`](https://github.com/open-mmlab/mmsegmentation/tree/main/configs)
+>
+> - About configs
+>
+>     🚀 [`MMSegmentation Docs - learn about configs`](https://mmsegmentation.readthedocs.io/en/main/user_guides/1_config.html)
+
+> [!Tip]
+> - If you change the model in 'configs/models', make sure that `num_classes` match the number of classes in your datasets
 
 ### 4. Train
 ```shell
 # Single GPU
-python train.py 'configs/pspnet.py'
+python train.py 'configs/deeplabv3plus.py'
 
 # Multiple GPU
-bash dist_train.sh 'configs/pspnet.py' 2
+bash dist_train.sh 'configs/deeplabv3plus.py' 2
 ```
 
 ### 5. Draw graph

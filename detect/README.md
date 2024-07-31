@@ -85,12 +85,12 @@ python validation.py
 # ⚡️ Result
 <div align="center">
 
-![results](https://github.com/user-attachments/assets/c7d7732a-b5ab-4a75-b451-2425b89c79f6)
-
-![confusion_matrix_normalized](https://github.com/user-attachments/assets/81650b69-3f2a-44bb-90fe-4282790abe6f)
+<img width="1564" alt="predict" src="https://github.com/user-attachments/assets/4a8d1f3f-4206-49cb-85c9-d22e3458f603">
 
 <img width="800" alt="mAP" src="https://github.com/user-attachments/assets/1573444b-3ab4-4013-a7bf-fb01fb4d15f1">
 
-<img width="1564" alt="predict" src="https://github.com/user-attachments/assets/4a8d1f3f-4206-49cb-85c9-d22e3458f603">
+![confusion_matrix_normalized](https://github.com/user-attachments/assets/81650b69-3f2a-44bb-90fe-4282790abe6f)
+
+![results](https://github.com/user-attachments/assets/c7d7732a-b5ab-4a75-b451-2425b89c79f6)
 
 </div>

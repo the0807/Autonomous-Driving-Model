@@ -4,4 +4,4 @@
 detect/runs/detect/train/weights
 segment/detectron2/output/model*
 segment/detectron2/output/events*
-segment/mmseg/work_dirs/pspnet/iter_*
+segment/mmseg/work_dirs/*/iter_*
