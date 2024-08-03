@@ -109,7 +109,7 @@ configs
 ├── default_runtime.py
 │
 │   # main config setting
-└── deeplabv3plus_240k.py
+└── deeplabv3plus_120k.py
 ```
 
 > [!Important]
@@ -129,10 +129,10 @@ configs
 ### 4. Train
 ```shell
 # Single GPU
-python train.py 'configs/deeplabv3plus.py'
+python train.py 'configs/deeplabv3plus_120k.py'
 
 # Multiple GPU
-bash dist_train.sh 'configs/deeplabv3plus.py' 2
+bash dist_train.sh 'configs/deeplabv3plus_120k.py' 2
 ```
 
 ### 5. Draw graph
@@ -149,11 +149,18 @@ run code `inference.ipynb`
 
 ### 7. Evaluation
 ```shell
-python validation.py 'configs/pspnet.py' 'path/to/trained_model.pth'
+python validation.py 'configs/deeplabv3plus_120k.py' 'path/to/trained_model.pth'
 ```
 
 # ⚡️ Result
 ### ⭐ DeepLabV3+
+<div align="center">
+
+
+
+</div>
+
+### ⭐ CCNet
 <div align="center">
 
 
@@ -168,7 +175,5 @@ python validation.py 'configs/pspnet.py' 'path/to/trained_model.pth'
 <img width="900" alt="스크린샷 2024-07-31 오전 11 48 49" src="https://github.com/user-attachments/assets/c250131b-5d86-45fd-811f-bad00154389f">
 
 ![loss_plots](https://github.com/user-attachments/assets/f3dab1dc-d53e-419a-b8c6-f8b6c6d75473)
-
-![train_plots](https://github.com/user-attachments/assets/b4f7c98f-1681-4e6e-a6cc-0f591be206f4)
 
 </div>

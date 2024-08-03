@@ -1,7 +1,6 @@
 _base_ = [
-    'models/deeplabv3plus_r50-d8.py',
-    'datasets/seg2DSS.py', 'default_runtime.py',
-    'schedules/schedule_240k.py'
+    'models/ccnet_r50-d8.py', 'datasets/seg2DSS.py',
+    'default_runtime.py', 'schedules/schedule_120k.py'
 ]
 crop_size = (512, 1024)
 data_preprocessor = dict(size=crop_size)

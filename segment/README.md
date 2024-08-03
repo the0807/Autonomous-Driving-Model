@@ -2,14 +2,21 @@
 
 # 2D Semantic Segmentation
 
-### MMSegmentation(DeepLabV3+, PSPNet) is recommended due to poor performance of Detectron2(Mask R-CNN)
+### MMSegmentation(DeepLabV3+, CCNet, PSPNet) is recommended due to poor performance of Detectron2(Mask R-CNN)
 
 </div>
 
-### ⭐ [`MMSegmentation(DeepLabV3, PSPNet)`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment/mmseg)
+### ⭐ [`MMSegmentation(DeepLabV3, CCNet, PSPNet)`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment/mmseg)
 
 # ⚡️ Result
 ### ⭐ DeepLabV3+
+<div align="center">
+
+
+
+</div>
+
+### ⭐ CCNet
 <div align="center">
 
 
