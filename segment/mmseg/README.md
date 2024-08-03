@@ -109,7 +109,7 @@ configs
 ├── default_runtime.py
 │
 │   # main config setting
-└── deeplabv3plus_120k.py
+└── deeplabv3plus_160k.py
 ```
 
 > [!Important]
@@ -129,10 +129,10 @@ configs
 ### 4. Train
 ```shell
 # Single GPU
-python train.py 'configs/deeplabv3plus_120k.py'
+python train.py 'configs/deeplabv3plus_160k.py'
 
 # Multiple GPU
-bash dist_train.sh 'configs/deeplabv3plus_120k.py' 2
+bash dist_train.sh 'configs/deeplabv3plus_160k.py' 2
 ```
 
 ### 5. Draw graph
@@ -149,7 +149,7 @@ run code `inference.ipynb`
 
 ### 7. Evaluation
 ```shell
-python validation.py 'configs/deeplabv3plus_120k.py' 'path/to/trained_model.pth'
+python validation.py 'configs/deeplabv3plus_160k.py' 'path/to/trained_model.pth'
 ```
 
 # ⚡️ Result
