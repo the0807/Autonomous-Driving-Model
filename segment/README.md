@@ -12,7 +12,7 @@
 ### ⭐ DeepLabV3+
 <div align="center">
 
-
+<img width="1857" alt="스크린샷 2024-08-05 오후 4 00 33" src="https://github.com/user-attachments/assets/cb476519-16c1-4441-b5ba-b7eaaa0bc257">
 
 </div>
 

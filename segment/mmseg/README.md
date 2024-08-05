@@ -156,7 +156,11 @@ python validation.py 'configs/deeplabv3plus_160k.py' 'path/to/trained_model.pth'
 ### ⭐ DeepLabV3+
 <div align="center">
 
+<img width="1857" alt="스크린샷 2024-08-05 오후 4 00 33" src="https://github.com/user-attachments/assets/cb476519-16c1-4441-b5ba-b7eaaa0bc257">
 
+<img width="950" alt="스크린샷 2024-08-05 오후 4 10 39" src="https://github.com/user-attachments/assets/c53436d7-0cc3-456a-b536-037743a75b88">
+
+![loss_plots](https://github.com/user-attachments/assets/b9b52037-dfb3-4aec-b18c-04b7d133063f)
 
 </div>
 

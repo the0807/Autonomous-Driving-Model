@@ -1,6 +1,6 @@
 _base_ = [
     'models/pspnet_r50-d8.py', 'datasets/seg2DSS.py',
-    'default_runtime.py', 'schedules/schedule_120k.py'
+    'default_runtime.py', 'schedules/schedule_160k.py'
 ]
 crop_size = (512, 1024)
 data_preprocessor = dict(size=crop_size)
