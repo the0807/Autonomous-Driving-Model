@@ -2,31 +2,31 @@
 
 # 2D Semantic Segmentation
 
-### MMSegmentation(DeepLabV3+, CCNet, PSPNet) is recommended due to poor performance of Detectron2(Mask R-CNN)
+### MMSegmentation(CCNet, DeepLabV3+, PSPNet) is recommended due to poor performance of Detectron2(Mask R-CNN)
 
 </div>
 
-### ⭐ [`MMSegmentation(DeepLabV3, CCNet, PSPNet)`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment/mmseg)
+### ⭐ [`MMSegmentation(CCNet, DeepLabV3, PSPNet)`](https://github.com/the0807/Autonomous-Driving-Model/tree/master/segment/mmseg)
 
 # ⚡️ Result
-### ⭐ DeepLabV3+
-<div align="center">
-
-<img width="1857" alt="스크린샷 2024-08-05 오후 4 00 33" src="https://github.com/user-attachments/assets/cb476519-16c1-4441-b5ba-b7eaaa0bc257">
-
-</div>
-
 ### ⭐ CCNet
 <div align="center">
 
+<img width="1857" alt="CCNet" src="https://github.com/user-attachments/assets/cb476519-16c1-4441-b5ba-b7eaaa0bc257">
 
+</div>
+
+### ⭐ DeepLabV3+
+<div align="center">
+
+<img width="1855" alt="DeepLabV3+" src="https://github.com/user-attachments/assets/404f22f6-5ebb-4e70-a55c-4603e02f5d4c">
 
 </div>
 
 ### ⭐ PSPNet
 <div align="center">
 
-<img width="1855" alt="스크린샷 2024-07-31 오전 11 39 26" src="https://github.com/user-attachments/assets/2391a756-a854-47be-820e-119046c3a3f4">
+
 
 </div>
 
