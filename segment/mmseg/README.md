@@ -99,7 +99,7 @@ configs
 │   # dataset setting (e.g. batch size)
 ├── datasets/
 │
-│   # model setting (e.g. CCNet, DeepLabv3+, PSPNet)
+│   # model setting (e.g. DeepLabv3+, CCNet, PSPNet)
 ├── models/
 │
 │   # train schedule setting (e.g. iteration, val interval)
@@ -109,7 +109,7 @@ configs
 ├── default_runtime.py
 │
 │   # main config setting
-└── ccnet_160k.py
+└── deeplabv3plus_160k.py
 ```
 
 > [!Important]
@@ -129,10 +129,10 @@ configs
 ### 4. Train
 ```shell
 # Single GPU
-python train.py 'configs/ccnet_160k.py'
+python train.py 'configs/deeplabv3plus_160k.py'
 
 # Multiple GPU
-bash dist_train.sh 'configs/ccnet_160k.py' 2
+bash dist_train.sh 'configs/deeplabv3plus_160k.py' 2
 ```
 
 ### 5. Draw graph
@@ -149,26 +149,26 @@ run code `inference.ipynb`
 
 ### 7. Evaluation
 ```shell
-python validation.py 'configs/ccnet_160k.py' 'path/to/trained_model.pth'
+python validation.py 'configs/deeplabv3plus_160k.py' 'path/to/trained_model.pth'
 ```
 
 # ⚡️ Result
-### ⭐ CCNet
+### ⭐ DeepLabV3+
 <div align="center">
 
-<img width="1857" alt="CCNet" src="https://github.com/user-attachments/assets/cb476519-16c1-4441-b5ba-b7eaaa0bc257">
+<img width="1857" alt="DeepLabV3+" src="https://github.com/user-attachments/assets/cb476519-16c1-4441-b5ba-b7eaaa0bc257">
 
-<img width="943" alt="스크린샷 2024-08-09 오후 3 38 51" src="https://github.com/user-attachments/assets/c44b4c9f-defc-4baf-824a-211c014a82e6"> | ![loss_plots](https://github.com/user-attachments/assets/0f8fab92-bc3a-4d52-8138-345d931e3461)
+<img width="944" alt="스크린샷 2024-08-09 오후 3 47 21" src="https://github.com/user-attachments/assets/b6568b0c-6999-447a-abfa-0a9b45175af8"> | ![loss_plots](https://github.com/user-attachments/assets/b9b52037-dfb3-4aec-b18c-04b7d133063f)
 |:--:|:--:|
 
 </div>
 
-### ⭐ DeepLabV3+
+### ⭐ CCNet
 <div align="center">
 
-<img width="1855" alt="DeepLabV3+" src="https://github.com/user-attachments/assets/404f22f6-5ebb-4e70-a55c-4603e02f5d4c">
+<img width="1855" alt="CCNet" src="https://github.com/user-attachments/assets/404f22f6-5ebb-4e70-a55c-4603e02f5d4c">
 
-<img width="944" alt="스크린샷 2024-08-09 오후 3 47 21" src="https://github.com/user-attachments/assets/b6568b0c-6999-447a-abfa-0a9b45175af8"> | ![loss_plots](https://github.com/user-attachments/assets/b9b52037-dfb3-4aec-b18c-04b7d133063f)
+<img width="943" alt="스크린샷 2024-08-09 오후 3 38 51" src="https://github.com/user-attachments/assets/c44b4c9f-defc-4baf-824a-211c014a82e6"> | ![loss_plots](https://github.com/user-attachments/assets/0f8fab92-bc3a-4d52-8138-345d931e3461)
 |:--:|:--:|
 
 </div>
@@ -176,6 +176,9 @@ python validation.py 'configs/ccnet_160k.py' 'path/to/trained_model.pth'
 ### ⭐ PSPNet
 <div align="center">
 
+<img width="1854" alt="PSPNet" src="https://github.com/user-attachments/assets/7fee56d7-fedb-4cd6-976f-e1893c4db7a0">
 
+<img width="943" alt="스크린샷 2024-08-11 오후 7 03 32" src="https://github.com/user-attachments/assets/f902f4b5-f671-4689-b82a-75ed602aa7c7"> | ![loss_plots](https://github.com/user-attachments/assets/80971f82-40db-4a5b-8385-f37558b7cf61)
+|:--:|:--:|
 
 </div>
