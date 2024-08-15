@@ -11,9 +11,12 @@
 
 |OS|GPU|CPU|RAM|CUDA|PyTorch|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|Ubuntu 20.04|Nvidia Quadro <br>RTX 5000|Intel(R) Xeon(R)<br> W-2245 CPU @ 3.90GHz|128GB|12.1|2.1|
+|Ubuntu 20.04|Nvidia Quadro <br>RTX 5000 x 2|Intel(R) Xeon(R)<br> W-2245 CPU @ 3.90GHz|128GB|12.1|2.1|
 
 </div>
+
+> [!Tip]
+> - You can download trained model from the [release](https://github.com/the0807/Autonomous-Driving-Model/releases/tag/v1.0)
 
 # ✏️ Prepare
 ### 1. Install python requirements
